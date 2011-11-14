@@ -1,0 +1,5 @@
+//needed for getopt
+#include <unistd.h> 
+//needed for readdir
+#include <dirent.h>
+ 
