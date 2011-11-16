@@ -1,8 +1,5 @@
-bcmp: bcmp.o
-	gcc -o bcmp bcmp.o
-
-bcmp.o: bcmp.c
-	gcc -c -o bcmp.o bcmp.c
-
-clean:
-	rm -rf *.o
+all:bcmp
+bcmp:bcmp.o
+	gcc -Wall -o bcmp bcmp.o
+bcmp.o:bcmp.c
+	gcc -c -Wall -o bcmp.o bcmp.c

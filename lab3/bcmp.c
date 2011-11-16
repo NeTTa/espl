@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 		fread(buffer_f2, 1, 1, f2);
 
 		if (buffer_f1[0] != buffer_f2[0]) { //Once a difference has been spoted:
-			printf("byte %d %d %d",char_counter,buffer_f1[0],buffer_f2[0]);
+			printf("byte %d %d %d\n",char_counter,buffer_f1[0],buffer_f2[0]);
 			break;
 		}
 		char_counter++;
