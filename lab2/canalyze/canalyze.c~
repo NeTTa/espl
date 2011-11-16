@@ -25,9 +25,11 @@ int main(int argc, char **argv) {
 		}
 		else
 		{
-				printf("%s\n", word);
-			for (i=0; i<80; i++)
-				word[i] = '\0';
+			printf("%s\n", word);
+			word[0] = '\0';
+	
+//			for (i=0; i<80; i++)
+//				word[i] = '\0';
 			id = 0;
 		}
 	}
