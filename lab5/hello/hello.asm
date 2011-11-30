@@ -5,7 +5,7 @@ section	.text
 _start:					;tell linker entry point
 	push	msg
 	call	length	;calling length function
-	mov	eax, length
+	mov	edx,eax
 	mov	ecx,msg	;message to write
 	mov	ebx,1	;file descriptor (stdout)
 	mov	eax,4	;system call number (sys_write)
