@@ -1,0 +1,5 @@
+Makefile
+is hard
+to write
+but I
+can do it
