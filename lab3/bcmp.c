@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
 
 	int char_counter=1; //Line counter.
 
-	while (!feof(f1)) { //Start reading file in binary mode:
+	while ((!feof(f1)) && (!feof(f2))) { //Start reading file in binary mode:
 		fread(buffer_f1, 1, 1, f1); //Binary read byte by byte.
 		fread(buffer_f2, 1, 1, f2);
 
