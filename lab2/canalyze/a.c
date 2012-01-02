@@ -1,3 +1,3 @@
 int foo() {
-  printf("world");
-}
+   printf("world");
+ }
