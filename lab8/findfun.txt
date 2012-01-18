@@ -1,0 +1,13 @@
+#! /bin/sh
+
+filesToSearchIn=`find $1 -name "*.c"` #Change this later on to recieve from outside
+
+for i in  $filesToSearchIn; do
+  if grep $2 $i; then
+  result=`grep -n $2 -A 6 $i`
+  echo "$i"
+  echo "===================================================="
+  echo "$result"
+  echo "===================================================="
+  fi
+done
